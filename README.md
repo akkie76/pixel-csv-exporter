@@ -58,3 +58,10 @@ deactivate
 ## License
 
 This project is open-source. Feel free to modify and distribute it as per your needs.
+
+## 🔗 Related Project
+
+- [SwiftChartsCanvas](https://github.com/akkie76/SwiftChartsCanvas)  
+
+A creative exploration of graph-based art using Swift Charts. This script helps generate pixel CSVs used in the **One More Pixel** artwork.
+
