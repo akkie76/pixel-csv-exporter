@@ -1,26 +1,60 @@
 # pixel-csv-exporter
 
-```
-$ brew install python
+A simple utility to export pixel data from an image to a CSV file. The script resizes the input image based on a scaling factor and outputs the resulting pixel coordinates along with their RGB values.
+
+## Prerequisites
+
+Ensure you have Python installed on your system. If you don't have Python installed, you can install it using Homebrew:
+
+```bash
+brew install python
 ```
 
-Create a virtual environment:
+## Setup
+
+1. **Create a virtual environment:**
+
+```bash
+python3 -m venv venv
 ```
-$ python3 -m venv venv
+
+2. **Activate the virtual environment:**
+
+```bash
+source venv/bin/activate
 ```
-Activate the virtual environment:
+
+3. **Install the required packages:**
+
+```bash
+pip install pillow
 ```
-$ source venv/bin/activate
+
+## Usage
+
+By default, the script uses a scaling factor of `0.1` to resize the image before exporting pixel data. To run the script without any arguments:
+
+```bash
+python create_pixel_csv.py
 ```
-Install packages using pip:
+
+To use a different scaling factor, pass the `--scale` argument:
+
+```bash
+python create_pixel_csv.py --scale 0.2
 ```
-$ pip install pillow
+
+> **Note:**  
+> The script uses a hardcoded input image path (`image.png`) and output CSV path (`SwiftChartsCanvas/SwiftChartsCanvas/pixels.csv`). Make sure these paths are correct for your setup before running the script.
+
+## Exiting the Virtual Environment
+
+When you are finished, you can exit the virtual environment by running:
+
+```bash
+deactivate
 ```
-Exit the virtual environment:
-```
-$ deactivate
-```
-Output CSV:
-```
-$ python image_to_csv.py
-```
+
+## License
+
+This project is open-source. Feel free to modify and distribute it as per your needs.
