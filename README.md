@@ -44,8 +44,8 @@ To use a different scaling factor, pass the `--scale` argument:
 python create_pixel_csv.py --scale 0.2
 ```
 
-> **Note:**  
-> The script uses a hardcoded input image path (`image.png`) and output CSV path (`SwiftChartsCanvas/SwiftChartsCanvas/pixels.csv`). Make sure these paths are correct for your setup before running the script.
+## Note
+The script uses a hardcoded input image path and output CSV path. Make sure these paths are correct for your setup before running the script.
 
 ## Exiting the Virtual Environment
 
